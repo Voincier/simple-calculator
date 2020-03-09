@@ -188,7 +188,18 @@ public class MainActivity extends AppCompatActivity {
                 prevOp=currOp;
                 resultText.setText(String.valueOf(total));
                 break;
-
+            case '*':
+                operator='*';
+                total=prevOp*currOp;
+                prevOp=currOp;
+                resultText.setText(String.valueOf(total));
+                break;
+            case '/':
+                operator='/';
+                total=prevOp/currOp;
+                prevOp=currOp;
+                resultText.setText(String.valueOf(total));
+                break;
         }
     }
 
